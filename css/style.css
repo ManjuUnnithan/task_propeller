@@ -1,0 +1,46 @@
+.accordion__container {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 20px;
+	margin: 100px 200px 200px 200px;
+}
+.accordion__tab {
+    background: #aaa;
+    color: #fff;
+    border-bottom: 1px solid white;
+	
+}
+.accordion__tab--title {
+    background: #990099;
+    padding-top: 23px;
+    cursor: pointer;
+	height: 70px;
+	font-size: 20pt;
+}
+
+.active,.accordion__tab--title:hover
+{
+ background:#6600cc;
+}
+
+.inactive
+{
+	background: #990099;
+}
+.accordion__tab--content {
+    background: #fff;
+    padding: 20px;
+	color: #000;
+}
+
+.arrow {
+    float: right;
+    width: 0px;
+    height: 0px;
+    margin-top: 23px;
+    border: 10px solid transparent;
+    margin-top: 21px;
+    border-top-color: #F3F3F3;
+	margin-right: 10px;
+}
+ 

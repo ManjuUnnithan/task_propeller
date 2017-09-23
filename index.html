@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+  <link href = "css/style.css" type = "text/css" rel = "stylesheet" />
+  
+  <script type="text/javascript" src="http://code.angularjs.org/1.2.5/angular.js"></script>
+  <script type = "text/javascript" src = "js/script.js"></script>
+  
+  <title>Accordion</title>   
+  
+</head>
+
+<body>
+  <div ng-app>
+    <div class="accordion__container" ng-controller="myCtrl">
+        <div class="accordion__tab" ng-repeat="item in blocks.slice(0,1)">
+            <div class="accordion__tab--title" ng-click="openTab('tab one')">{{item.heading}}<div class="arrow down"></div></div>
+            <div class="accordion__tab--content" ng-show="isOpenTab('tab one')">{{item.content}}</div>
+        </div>
+        <div class="accordion__tab" ng-repeat="item in blocks.slice(1,2)">
+            <div class="accordion__tab--title" ng-click="openTab('tab two')">{{item.heading}}<div class="arrow down"></div></div>
+            <div class="accordion__tab--content" ng-show="isOpenTab('tab two')">{{item.content}}</div>
+        </div>
+        <div class="accordion__tab" ng-repeat="item in blocks.slice(2,3)">
+            <div class="accordion__tab--title" ng-click="openTab('tab three')">{{item.heading}}<div class="arrow down"></div></div>
+            <div class="accordion__tab--content" ng-show="isOpenTab('tab three')">{{item.content}}</div>
+        </div>
+    </div>
+</div>
+  
+  </body>
+
+</html>
+
